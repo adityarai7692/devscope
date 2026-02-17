@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { fetchUser, fetchRepos } from '../services/githubApi';
 
-export default function useGithub(username) {
+export default function useGithub() {
     const [profile, setProfile] = useState(null);
     const [repos, setRepos] = useState([]);
     const [loading, setLoading] = useState(false);
